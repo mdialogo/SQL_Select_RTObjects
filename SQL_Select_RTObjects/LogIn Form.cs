@@ -18,8 +18,8 @@ namespace SQL_Select_RTObjects
         public LogInForm()
         {
             InitializeComponent();
-            string sqlString = "Server=localhost;Data Source=.\\SQLEXPRESS;" +
-                               "Database=C:\\database\\SQLServer\\CSE_DEPT.mdf;Integrated Security=SSPI";
+            string sqlString = @"Data Source=DORIE-PC\SQLEXPRESS;Initial Catalog=CSE_DEPT;
+                                Persist Security Info=True;User ID=mike;Password=D1@logo7497";
             sqlConnection = new SqlConnection(sqlString);
 
             try
